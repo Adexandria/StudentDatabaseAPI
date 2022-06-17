@@ -29,5 +29,5 @@ const options = {
   const specs = swaggerJsDoc(options);
   app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
   app.use("/",router);
-
-app.listen(3000, () => console.log(`Server runs on port 3000`));
+ var port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server runs on port ${port}`));

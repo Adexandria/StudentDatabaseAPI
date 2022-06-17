@@ -4,7 +4,8 @@
     "description": "Api for Student Database",
     "main": "basicInfo.js",
     "scripts": {
-        "start": "nodemon basicInfo.js"
+        "start": "nodemon basicInfo.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
         "body-parser": "^1.20.0",
@@ -18,5 +19,9 @@
     },
     "devDependencies": {
         "nodemon": "^2.0.16"
-    }
+    },
+    "author": "Adeola Aderibigbe",
+    "engines": {
+        "node": "16.x"
+      }
 }

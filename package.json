@@ -17,9 +17,6 @@
         "swagger-ui-express": "^4.4.0",
         "nodemon": "^2.0.16"
     },
-    "devDependencies": {
-        "nodemon": "^2.0.16"
-    },
     "author": "Adeola Aderibigbe",
     "engines": {
         "node": "16.x"

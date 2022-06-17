@@ -341,10 +341,6 @@ router.get('/api/students/filter/class',(req,res)=>{
  *     responses:
  *       200:
  *         description: Created successfully
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Student'
  *       500:
  *         description: Some server error
  */
@@ -382,10 +378,6 @@ router.post('/api/students',(req,res)=>{
  *     responses:
  *       200:
  *         description: Updated successfully
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Student'
  *       500:
  *         description: Some server error
  */
@@ -424,10 +416,6 @@ router.put('/api/students/:id',(req,res)=>{
  *     responses:
  *       200:
  *         description: Deleted successfully
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Student'
  *       500:
  *         description: Some server error
  */

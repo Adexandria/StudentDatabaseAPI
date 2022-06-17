@@ -1,4 +1,4 @@
-const Student = require('../student.js').Student;
+const Student = require('../Model/student.js').Student;
 const GetAllStudents = (done)=>
 {
     Student.find((err,data)=>

@@ -3,7 +3,7 @@ var cors = require('cors')
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const morgan = require('morgan');
-const router = require('../Controller/StudentApp.js').router;
+const router = require('./Controller/StudentApp.js').router;
 const app = express();
 app.use(cors());
 app.use(morgan("dev"));
@@ -21,13 +21,7 @@ const options = {
           url: "https://github.com/Adexandria", // your website
         },
       },
-      schemes : ["http"],
-      servers: [
-        {
-          url: "http://localhost:3000",
-          description: "My API Documentation",
-        },
-      ],
+      schemes : ["http"]
     },
     apis: ["./Controller/*.js","./Repository/*.js"]
   };

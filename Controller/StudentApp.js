@@ -1,5 +1,4 @@
 //Import modules
-console.log("Running");
 const GetAllStudents = require('../Repository/StudentRepository').GetAllStudents;
 const CreateStudent = require('../Repository/StudentRepository').CreateStudent;
 const GetStudentById = require('../Repository/StudentRepository').GetStudentById;
@@ -200,7 +199,6 @@ router.get('/api/students/:id', (req, res) => {
  */ 
 router.get('/api/students/filter/name', (req, res) => {
     var name = req.query.name;
-    console.log(name);
     GetStudentsByName(name,(err,data)=>{
         if(err) 
         {

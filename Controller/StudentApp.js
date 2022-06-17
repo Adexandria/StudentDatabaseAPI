@@ -1,4 +1,5 @@
 //Import modules
+console.log("Running");
 const GetAllStudents = require('../Repository/StudentRepository').GetAllStudents;
 const CreateStudent = require('../Repository/StudentRepository').CreateStudent;
 const GetStudentById = require('../Repository/StudentRepository').GetStudentById;
@@ -142,7 +143,7 @@ router.get('/api/students', (req, res) => {
  *         name: id
  *         description: id of student
  *         schema:
- *           type: integer
+ *           type: string
  *         required: true
  *     responses:
  *       200:
@@ -367,7 +368,7 @@ router.post('/api/students',(req,res)=>{
  *         name: id
  *         description: id of student
  *         schema:
- *           type: int
+ *           type: string
  *         required: true
  *     requestBody:
  *       required: true
@@ -405,7 +406,7 @@ router.put('/api/students/:id',(req,res)=>{
  *         name: id
  *         description: id of student
  *         schema:
- *           type: int
+ *           type: string
  *         required: true
  *     requestBody:
  *       required: true

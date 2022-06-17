@@ -1,6 +1,14 @@
 {
+    "name": "studentdatabaseapi",
+    "version": "1.0.0",
+    "description": "Api for Student Database",
+    "main": "basicInfo.js",
+    "scripts": {
+        "start": "nodemon basicInfo.js"
+    },
     "dependencies": {
         "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
         "dotenv": "^16.0.1",
         "express.js": "^1.0.0",
         "mongoose": "^6.3.8",
